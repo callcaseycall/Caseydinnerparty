@@ -16,9 +16,12 @@ const orderSorter = (order) => {
 
 while (true) {
   const userInput = prompt(
-    "Enter your order",
+    "Enter your order (or type 'exit' to quit)",
     "vanilla,vanilla,vanilla,strawberry,coffee,coffee"
   );
+
+  if (userInput === 'exit')
+    break;
 
   const obj = orderSorter(userInput);
   console.log("You ordered");
