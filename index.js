@@ -20,8 +20,7 @@ while (true) {
     "vanilla,vanilla,vanilla,strawberry,coffee,coffee"
   );
 
-  if (userInput === 'exit')
-    break;
+  if (userInput === "exit") break;
 
   const obj = orderSorter(userInput);
   console.log("You ordered");
